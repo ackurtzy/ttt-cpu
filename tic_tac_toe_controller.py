@@ -66,7 +66,7 @@ class TextController(TicTacToeController):
             self.move()
 
 
-class CPUControllerRandom(TicTacToeController):
+class CPUController(TicTacToeController):
     """
     Class to control a game of tic-tac-toe by playing optimally.
 

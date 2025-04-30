@@ -4,7 +4,7 @@ Main program to set up and run a tic-tac-toe game.
 
 from tic_tac_toe_board import TicTacToeBoard
 from tic_tac_toe_view import TextView
-from tic_tac_toe_controller import TextController, CPUControllerRandom
+from tic_tac_toe_controller import TextController, CPUController
 
 
 def main():
@@ -13,7 +13,7 @@ def main():
     """
     board = TicTacToeBoard()
     view = TextView(board)
-    player_one = CPUControllerRandom(board)
+    player_one = CPUController(board)
     player_two = TextController(board)
     for i in range(1, 10):
         view.draw()
